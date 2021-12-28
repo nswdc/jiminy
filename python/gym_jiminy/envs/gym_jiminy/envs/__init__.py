@@ -5,6 +5,7 @@ from .acrobot import AcrobotJiminyEnv, AcrobotJiminyGoalEnv
 from .ant import AntEnv
 from .spotmicro import SpotmicroJiminyEnv
 from .cassie import CassieJiminyEnv, CassiePDControlJiminyEnv
+from .digit import DigitJiminyEnv  #, DigitPDControlJiminyEnv
 from .anymal import ANYmalJiminyEnv, ANYmalPDControlJiminyEnv
 from .atlas import (AtlasJiminyEnv,
                     AtlasReducedJiminyEnv,
@@ -20,6 +21,8 @@ __all__ = [
     'SpotmicroJiminyEnv',
     'CassieJiminyEnv',
     'CassiePDControlJiminyEnv',
+    'DigitJiminyEnv',
+    #'DigitPDControlJiminyEnv',
     'ANYmalJiminyEnv',
     'ANYmalPDControlJiminyEnv',
     'AtlasJiminyEnv',
@@ -58,6 +61,14 @@ register(
     id='cassie-pid-v0',
     entry_point='gym_jiminy.envs:CassiePDControlJiminyEnv'
 )
+register(
+    id='digit-v0',
+    entry_point='gym_jiminy.envs:DigitJiminyEnv'
+)
+# register(
+#     id='digit-pid-v0',
+#     entry_point='gym_jiminy.envs:DigitPDControlJiminyEnv'
+# )
 register(
     id='anymal-v0',
     entry_point='gym_jiminy.envs:ANYmalJiminyEnv'

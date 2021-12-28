@@ -1,0 +1,242 @@
+[Global]
+collisionBodiesNames = ["left_toe_roll", "right_toe_roll"]
+contactFramesNames = []
+
+# ================== Motors ==================
+
+[Motor.SimpleMotor.hip_abduction_left]
+joint_name = "hip_abduction_left"
+armature = 0.2
+
+[Motor.SimpleMotor.hip_rotation_left]
+joint_name = "hip_rotation_left"
+armature = 0.2
+
+[Motor.SimpleMotor.hip_flexion_left]
+joint_name = "hip_flexion_left"
+armature = 0.2
+
+[Motor.SimpleMotor.knee_joint_left]
+joint_name = "knee_joint_left"
+armature = 0.2
+
+[Motor.SimpleMotor.shin_to_tarsus_left]
+joint_name = "shin_to_tarsus_left"
+armature = 0.2
+
+[Motor.SimpleMotor.toe_pitch_joint_left]
+joint_name = "toe_pitch_joint_left"
+armature = 0.2
+
+[Motor.SimpleMotor.toe_roll_joint_left]
+joint_name = "toe_roll_joint_left"
+armature = 0.2
+
+[Motor.SimpleMotor.shoulder_roll_joint_left]
+joint_name = "shoulder_roll_joint_left"
+armature = 0.2
+
+[Motor.SimpleMotor.shoulder_pitch_joint_left]
+joint_name = "shoulder_pitch_joint_left"
+armature = 0.2
+
+[Motor.SimpleMotor.shoulder_yaw_joint_left]
+joint_name = "shoulder_yaw_joint_left"
+armature = 0.2
+
+[Motor.SimpleMotor.elbow_joint_left]
+joint_name = "elbow_joint_left"
+armature = 0.2
+
+[Motor.SimpleMotor.hip_abduction_right]
+joint_name = "hip_abduction_right"
+armature = 0.2
+
+[Motor.SimpleMotor.hip_rotation_right]
+joint_name = "hip_rotation_right"
+armature = 0.2
+
+[Motor.SimpleMotor.hip_flexion_right]
+joint_name = "hip_flexion_right"
+armature = 0.2
+
+[Motor.SimpleMotor.knee_joint_right]
+joint_name = "knee_joint_right"
+armature = 0.2
+
+[Motor.SimpleMotor.shin_to_tarsus_right]
+joint_name = "shin_to_tarsus_right"
+armature = 0.2
+
+[Motor.SimpleMotor.toe_pitch_joint_right]
+joint_name = "toe_pitch_joint_right"
+armature = 0.2
+
+[Motor.SimpleMotor.toe_roll_joint_right]
+joint_name = "toe_roll_joint_right"
+armature = 0.2
+
+[Motor.SimpleMotor.shoulder_roll_joint_right]
+joint_name = "shoulder_roll_joint_right"
+armature = 0.2
+
+[Motor.SimpleMotor.shoulder_pitch_joint_right]
+joint_name = "shoulder_pitch_joint_right"
+armature = 0.2
+
+[Motor.SimpleMotor.shoulder_yaw_joint_right]
+joint_name = "shoulder_yaw_joint_right"
+armature = 0.2
+
+[Motor.SimpleMotor.elbow_joint_right]
+joint_name = "elbow_joint_right"
+armature = 0.2
+
+# =============== IMU sensors =================
+
+[Sensor.ImuSensor.torso]
+frame_name = "torso"
+
+# ============= Force sensors ===============
+
+[Sensor.ForceSensor.left_foot]
+frame_name = "left_toe_roll"
+
+[Sensor.ForceSensor.right_foot]
+frame_name = "right_toe_roll"
+
+# ============= Effort sensors ===============
+
+[Sensor.EffortSensor.hip_abduction_left]
+motor_name = "hip_abduction_left"
+
+[Sensor.EffortSensor.hip_rotation_left]
+motor_name = "hip_rotation_left"
+
+[Sensor.EffortSensor.hip_flexion_left]
+motor_name = "hip_flexion_left"
+
+[Sensor.EffortSensor.knee_joint_left]
+motor_name = "knee_joint_left"
+
+[Sensor.EffortSensor.shin_to_tarsus_left]
+motor_name = "shin_to_tarsus_left"
+
+[Sensor.EffortSensor.toe_pitch_joint_left]
+motor_name = "toe_pitch_joint_left"
+
+[Sensor.EffortSensor.toe_roll_joint_left]
+motor_name = "toe_roll_joint_left"
+
+[Sensor.EffortSensor.shoulder_roll_joint_left]
+motor_name = "shoulder_roll_joint_left"
+
+[Sensor.EffortSensor.shoulder_pitch_joint_left]
+motor_name = "shoulder_pitch_joint_left"
+
+[Sensor.EffortSensor.shoulder_yaw_joint_left]
+motor_name = "shoulder_yaw_joint_left"
+
+[Sensor.EffortSensor.elbow_joint_left]
+motor_name = "elbow_joint_left"
+
+[Sensor.EffortSensor.hip_abduction_right]
+motor_name = "hip_abduction_right"
+
+[Sensor.EffortSensor.hip_rotation_right]
+motor_name = "hip_rotation_right"
+
+[Sensor.EffortSensor.hip_flexion_right]
+motor_name = "hip_flexion_right"
+
+[Sensor.EffortSensor.knee_joint_right]
+motor_name = "knee_joint_right"
+
+[Sensor.EffortSensor.shin_to_tarsus_right]
+motor_name = "shin_to_tarsus_right"
+
+[Sensor.EffortSensor.toe_pitch_joint_right]
+motor_name = "toe_pitch_joint_right"
+
+[Sensor.EffortSensor.toe_roll_joint_right]
+motor_name = "toe_roll_joint_right"
+
+[Sensor.EffortSensor.shoulder_roll_joint_right]
+motor_name = "shoulder_roll_joint_right"
+
+[Sensor.EffortSensor.shoulder_pitch_joint_right]
+motor_name = "shoulder_pitch_joint_right"
+
+[Sensor.EffortSensor.shoulder_yaw_joint_right]
+motor_name = "shoulder_yaw_joint_right"
+
+[Sensor.EffortSensor.elbow_joint_right]
+motor_name = "elbow_joint_right"
+
+# ============= Encoder sensors ===============
+
+[Sensor.EncoderSensor.hip_abduction_left]
+joint_name = "hip_abduction_left"
+
+[Sensor.EncoderSensor.hip_rotation_left]
+joint_name = "hip_rotation_left"
+
+[Sensor.EncoderSensor.hip_flexion_left]
+joint_name = "hip_flexion_left"
+
+[Sensor.EncoderSensor.knee_joint_left]
+joint_name = "knee_joint_left"
+
+[Sensor.EncoderSensor.shin_to_tarsus_left]
+joint_name = "shin_to_tarsus_left"
+
+[Sensor.EncoderSensor.toe_pitch_joint_left]
+joint_name = "toe_pitch_joint_left"
+
+[Sensor.EncoderSensor.toe_roll_joint_left]
+joint_name = "toe_roll_joint_left"
+
+[Sensor.EncoderSensor.shoulder_roll_joint_left]
+joint_name = "shoulder_roll_joint_left"
+
+[Sensor.EncoderSensor.shoulder_pitch_joint_left]
+joint_name = "shoulder_pitch_joint_left"
+
+[Sensor.EncoderSensor.shoulder_yaw_joint_left]
+joint_name = "shoulder_yaw_joint_left"
+
+[Sensor.EncoderSensor.elbow_joint_left]
+joint_name = "elbow_joint_left"
+
+[Sensor.EncoderSensor.hip_abduction_right]
+joint_name = "hip_abduction_right"
+
+[Sensor.EncoderSensor.hip_rotation_right]
+joint_name = "hip_rotation_right"
+
+[Sensor.EncoderSensor.hip_flexion_right]
+joint_name = "hip_flexion_right"
+
+[Sensor.EncoderSensor.knee_joint_right]
+joint_name = "knee_joint_right"
+
+[Sensor.EncoderSensor.shin_to_tarsus_right]
+joint_name = "shin_to_tarsus_right"
+
+[Sensor.EncoderSensor.toe_pitch_joint_right]
+joint_name = "toe_pitch_joint_right"
+
+[Sensor.EncoderSensor.toe_roll_joint_right]
+joint_name = "toe_roll_joint_right"
+
+[Sensor.EncoderSensor.shoulder_roll_joint_right]
+joint_name = "shoulder_roll_joint_right"
+
+[Sensor.EncoderSensor.shoulder_pitch_joint_right]
+joint_name = "shoulder_pitch_joint_right"
+
+[Sensor.EncoderSensor.shoulder_yaw_joint_right]
+joint_name = "shoulder_yaw_joint_right"
+
+[Sensor.EncoderSensor.elbow_joint_right]
+joint_name = "elbow_joint_right"
